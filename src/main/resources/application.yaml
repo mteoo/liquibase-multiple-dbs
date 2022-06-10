@@ -1,0 +1,28 @@
+spring:
+  datasource-mssql:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    jdbc-url: jdbc:sqlserver://10.0.0.1:1433;encrypt=true;trustServerCertificate=true;
+    username: admin
+    password: admin
+    initialization-mode: always
+  datasource-oracle:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    jdbc-url: jdbc:oracle:thin:@DB/serviceName
+    username: admin
+    password: admin
+    initialization-mode: always
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+datasource:
+  mssql:
+    liquibase:
+      change-log: classpath:migrations/mssql/db_changelog_mssql.xml
+  oracle:
+    liquibase:
+      change-log: classpath:migrations/oracle/db_changelog_oracle.xml
+logging:
+  level:
+    liquibase: INFO
