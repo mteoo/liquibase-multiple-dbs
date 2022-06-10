@@ -1,4 +1,12 @@
-# Migrations
+# Liquibase Multiple DBs
+
+Java Liquibase Application with multiples databases.
+
+### Add DB
+
+To add a new database just include it in the DatabaseConfig.java class and configure application.yaml
+
+# [PT-BR] Migrations || Padrão de projeto e Documentação
 
 ### Adicionando novo arquivo migration
 
