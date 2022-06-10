@@ -1,6 +1,6 @@
 # Liquibase Multiple DBs
 
-Java Liquibase Application with multiples databases.
+Java Liquibase Application with multiple databases.
 
 ### Add DB
 
